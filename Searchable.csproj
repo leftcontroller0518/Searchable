@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Searchable</RootNamespace>
+    <AssemblyName>Searchable</AssemblyName>
+    <YMM4DirPath Condition="'$(YMM4DirPath)' == ''">C:\YMM4\</YMM4DirPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="YukkuriMovieMaker.Plugin">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Plugin.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker.Controls">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.Controls.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="YukkuriMovieMaker">
+      <HintPath>$(YMM4DirPath)YukkuriMovieMaker.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyToYmm4PluginFolder" AfterTargets="Build">
+    <ItemGroup>
+      <PluginOutputFiles Include="$(OutDir)$(AssemblyName).dll" />
+      <PluginOutputFiles Include="$(OutDir)$(AssemblyName).pdb" Condition="Exists('$(OutDir)$(AssemblyName).pdb')" />
+    </ItemGroup>
+    <MakeDir Directories="$(YMM4DirPath)user\plugin\$(AssemblyName)\" Condition="!Exists('$(YMM4DirPath)user\plugin\$(AssemblyName)\')" />
+    <Copy SourceFiles="@(PluginOutputFiles)" DestinationFolder="$(YMM4DirPath)user\plugin\$(AssemblyName)\" SkipUnchangedFiles="false" />
+  </Target>
+
+</Project>
