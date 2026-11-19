@@ -4,6 +4,8 @@
 [![YMM4](https://img.shields.io/badge/YMM4-v4.57.0.1%2B-green.svg)](https://manjubox.net/ymm4/)
 [![Downloads](https://img.shields.io/github/downloads/leftcontroller0518/Searchable/total)](https://github.com/leftcontroller0518/Searchable/releases/latest)
 
+[![image.png](https://github.com/user-attachments/assets/ea7c9e55-62e2-4342-b5f7-ddf3d099e650)](https://abehiroshi.la.coocan.jp)
+
 **Searchable** は、ゆっくりMovieMaker4 (YMM4) のための高速・高機能な統合検索・コマンドパレットプラグインです。  
 VS Code や Raycast のように、**`Ctrl + Shift + F`** を押すだけで画面中央にミニマルな検索バーがポップアップ。  
 ウィンドウの呼び出し、アイテムの追加、映像・音声エフェクトの即時適用、キャラクター切り替え、各種操作コマンドをキーボードだけで瞬時に実行できます。
