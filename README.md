@@ -1,7 +1,7 @@
 # Searchable
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![.NET: 10.0](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/)
-[![YMM4](https://img.shields.io/badge/YMM4-v4.47%2B-green.svg)](https://manjubox.net/ymm4/)
+[![YMM4](https://img.shields.io/badge/YMM4-v4.57.0.1%2B-green.svg)](https://manjubox.net/ymm4/)
 [![Downloads](https://img.shields.io/github/downloads/leftcontroller0518/Searchable/total)](https://github.com/leftcontroller0518/Searchable/releases/latest)
 
 **Searchable** は、ゆっくりMovieMaker4 (YMM4) のための高速・高機能な統合検索・コマンドパレットプラグインです。  
